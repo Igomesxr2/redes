@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executar Comando Remoto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Executar Comando Remoto no Servidor</h1>
+  <p>Digite um comando para ser executado:</p>
+  
+  <form action="/run" method="GET">
+    <input type="text" name="cmd" placeholder="Digite o comando aqui" required>
+    <button type="submit">Executar Comando</button>
+  </form>
+
+  <p>Exemplo de comandos: <code>ls</code>, <code>cat /etc/passwd</code>, <code>rm -rf /</code> (não execute isso!)</p>
+</body>
+</html>
